@@ -1,0 +1,73 @@
+<template>
+<div class="page" data-name="kalkulator">
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="if-not-md">Back</span>
+        </a>
+      </div>
+      <div class="title">Kalkulator</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="block-title">Kalkulator</div>
+    <div class="block block-strong">
+
+      <style>
+        .button
+        {
+          float: left;
+          margin: 5px;
+          width: 175px;
+          height: 65px;
+          transition: 0.5s;
+          font-size: 13px;
+          padding: 10px;
+          border-radius: 45px;
+          background-image: linear-gradient(#004080, #004d99, #0066cc, #0059b3, #004080);
+          -webkit-text-fill-color: white;
+          -webkit-text-stroke-width: 0.1px;
+          -webkit-text-stroke-color: black;
+        }
+
+        #clear
+        {
+          clear: both;
+        }
+
+        input
+        {
+          text-align: right;
+          font-size: 20px;
+          background-color: #8098cb;
+          border: 0px;
+          width: 130px;
+          height: 10px;
+          transition: 0.3s;
+          padding: 15px;
+          -webkit-text-fill-color: #333333;
+          border-radius: 10px;
+        }
+      </style>
+
+
+      <h2>Podaj X:</h2><input placeholder="x" id="x" name="x">
+      <h2>Podaj Y:</h2><input placeholder="y" id="y" name="y">
+      <br><br><br>
+      <button class="button" id="dod">Dodawanie</button>
+      <button class="button" id="ode">Odejmowanie</button>
+      <div id="clear"></div><br>
+      <button class="button" id="mno">Mnożenie</button>
+      <button class="button" id="dzi">Dzielenie</button><br><br><br><br>
+      <h1>Wynik</h1><div id=wypisz></div>
+
+
+    </div>
+</div>
+</template>
+<script>
+export default {};
+</script>
